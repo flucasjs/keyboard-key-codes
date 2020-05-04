@@ -1,0 +1,481 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p {
+  width: 100px;
+  height: 100px;
+}
+
+.key {
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 7.5px;
+  padding-top: 2.5px;
+  border-radius: 5px;
+  border: 2px outset gray;
+}
+
+.key:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.key:active {
+  background-color: white;
+  border: 2px inset gray;
+}
+
+.keyboard {
+  padding: 10px;
+  border: 5px outset gray;
+  width: 1200px;
+  height: 275px;
+  background-color: silver;
+  display: grid;
+  grid-template-columns: repeat(23, 50px);
+  grid-template-rows: repeat(6, 40px);
+  
+  /* Dash not allowed? */
+  
+  grid-template-areas: 
+  "escape ... f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 .... printscreen scrolllock pausebreak ... ... ... ... ..."
+  "graveaccent one two three four five six seven eight nine zero dash equal backspace ... insert home pageup ... numlock numpadslash numpadasterisk numpadminus "
+  "tab q w e r t y u i o p openbracket closedbracket backslash ... delete endkey pagedown ... numpad7 numpad8 numpad9 numpadplus"
+  "capslock a s d f g h j k l semicolon apostrophe enter enter ... ... ... ... ... numpad4 numpad5 numpad6 numpadplus"
+  "leftshift leftshift z x c v b n m comma period slash rightshift rightshift ... ... uparrow ... ... numpad1 numpad2 numpad3 numpadenter"
+  "leftctrl leftwinkey leftalt spacebar spacebar spacebar spacebar spacebar spacebar spacebar rightalt rightwinkey contextmenu rightctrl ... leftarrow downarrow rightarrow ... numpad0 numpad0 numpadperiod numpadenter"
+  ;
+  grid-gap: 1px;
+  border-radius: 5px;
+}
+
+/* Key Grid Areas */
+
+#backspace {
+  grid-area: backspace;
+}
+
+#tab {
+  grid-area: tab;
+}
+
+#enter {
+  grid-area: enter;
+}
+
+#numpadenter {
+  grid-area: numpadenter;
+}
+
+#leftshift {
+    grid-area: leftshift;
+  }
+
+#rightshift {
+  grid-area: rightshift;
+}
+
+#leftctrl {
+  grid-area: leftctrl;
+}
+
+#rightctrl {
+    grid-area: rightctrl;
+  }
+
+#leftalt {
+  grid-area: leftalt;
+}
+
+#rightalt {
+  grid-area: rightalt;
+}
+
+#spacebar {
+  grid-area: spacebar;
+}
+
+#pausebreak {
+  grid-area: pausebreak;
+}
+
+#capslock {
+  grid-area: capslock;
+}
+
+#escape {
+  grid-area: escape;
+}
+
+#pageup {
+  grid-area: pageup;
+}
+
+#pagedown {
+  grid-area: pagedown;
+}
+
+#endkey {
+  grid-area: endkey;
+}
+
+#home {
+  grid-area: home;
+}
+
+#leftarrow {
+  grid-area: leftarrow;
+}
+
+#rightarrow {
+  grid-area: rightarrow;
+}
+
+#uparrow {
+  grid-area: uparrow;
+}
+
+#downarrow {
+  grid-area: downarrow;
+}
+
+#printscreen {
+  grid-area: printscreen;
+}
+
+#insert {
+  grid-area: insert;
+}
+
+#delete {
+  grid-area: delete;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#a {
+  grid-area: a;
+}
+
+#b {
+  grid-area: b;
+}
+
+#c {
+  grid-area: c;
+}
+
+#d {
+  grid-area: d;
+}
+
+#e {
+  grid-area: e;
+}
+
+#f {
+  grid-area: f;
+}
+
+#g {
+  grid-area: g;
+}
+
+#h {
+  grid-area: h;
+}
+
+#i {
+  grid-area: i;
+}
+
+#j {
+  grid-area: j;
+}
+
+#k {
+  grid-area: k;
+}
+
+#l {
+  grid-area: l;
+}
+
+#m {
+  grid-area: m;
+}
+
+#n {
+  grid-area: n;
+}
+
+#o {
+  grid-area: o;
+}
+
+#p {
+  grid-area: p;
+}
+
+#q {
+  grid-area: q;
+}
+
+#r {
+  grid-area: r;
+}
+
+#s {
+  grid-area: s;
+}
+
+#t {
+  grid-area: t;
+}
+
+#u {
+  grid-area: u;
+}
+
+#v {
+  grid-area: v;
+}
+
+#w {
+  grid-area: w;
+}
+
+#x {
+  grid-area: x;
+}
+
+#y {
+  grid-area: y;
+}
+
+#z {
+  grid-area: z;
+}
+
+#leftwinkey {
+  grid-area: leftwinkey;
+}
+
+#rightwinkey {
+  grid-area: rightwinkey;
+}
+
+#contextmenu {
+  grid-area: contextmenu;
+}
+
+#numpad0 {
+  grid-area: numpad0;
+}
+
+#numpad1 {
+  grid-area: numpad1;
+}
+
+#numpad2 {
+  grid-area: numpad2;
+}
+
+#numpad3 {
+  grid-area: numpad3;
+}
+
+#numpad4 {
+  grid-area: numpad4;
+}
+
+#numpad5 {
+  grid-area: numpad5;
+}
+
+#numpad6 {
+  grid-area: numpad6;
+}
+
+#numpad7 {
+  grid-area: numpad7;
+}
+
+#numpad8 {
+  grid-area: numpad8;
+}
+
+#numpad9 {
+  grid-area: numpad9;
+}
+
+#numpadasterisk {
+  grid-area: numpadasterisk;
+}
+
+#numpadplus {
+  grid-area: numpadplus;
+}
+
+#numpadminus {
+  grid-area: numpadminus;
+}
+
+#numpadperiod {
+  grid-area: numpadperiod;
+}
+
+#numpadslash {
+  grid-area: numpadslash;
+}
+
+#f1 {
+  grid-area: f1;
+}
+
+#f2 {
+  grid-area: f2;
+}
+
+#f3 {
+  grid-area: f3;
+}
+
+#f4 {
+  grid-area: f4;
+}
+
+#f5 {
+  grid-area: f5;
+}
+
+#f6 {
+  grid-area: f6;
+}
+
+#f7 {
+  grid-area: f7;
+}
+
+#f8 {
+  grid-area: f8;
+}
+
+#f9 {
+  grid-area: f9;
+}
+
+#f10 {
+  grid-area: f10;
+}
+
+#f11 {
+  grid-area: f11;
+}
+
+#f12 {
+  grid-area: f12;
+}
+
+#numlock {
+  grid-area: numlock;
+}
+
+#scrolllock {
+  grid-area: scrolllock;
+}
+
+#semicolon {
+  grid-area: semicolon;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+#comma {
+  grid-area: comma;
+}
+
+#dash {
+  grid-area: dash;
+}
+
+#period {
+  grid-area: period;
+}
+
+#slash {
+  grid-area: slash;
+}
+
+#graveaccent {
+  grid-area: graveaccent;
+}
+
+#openbracket {
+  grid-area: openbracket;
+}
+
+#backslash {
+  grid-area: backslash;
+}
+
+#closedbracket {
+  grid-area: closedbracket;
+}
+
+#apostrophe {
+  grid-area: apostrophe;
+}
+
+
+.col-2 {
+  grid-column: 7 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.col-3 {
+  grid-column: 7 / span 3;
+  grid-row: 3 / span 1;
+}
