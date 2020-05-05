@@ -20,11 +20,9 @@ document.addEventListener("click", (event) => {
     		let value = event.target.id;
     		for (let i = 0; i <= keycodes.length; i++) {
         	if (value == keycodes[i]['name']) {
-            //alert(keycodes[i]['id']);
-            let text = document.getElementById("output");
+            let text = document.getElementById("output__key");
             text.innerHTML = keycodes[i]['id'];
           }
         }
     }
-    
-})
+});

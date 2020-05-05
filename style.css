@@ -4,9 +4,30 @@
   box-sizing: border-box;
 }
 
-p {
-  width: 100px;
-  height: 100px;
+body {
+  background-color: rgba(174, 174, 174, 0.1);
+}
+
+.container {
+  padding: 10px;
+  margin: 10px;
+}
+
+#output {
+  margin: 0 auto 25px;
+  width: 200px;
+  height: 85px;
+  overflow: auto;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+}
+
+p#output__label {
+  float: left;
+}
+
+p#output__key {
+  float: right;
 }
 
 .key {
@@ -28,17 +49,14 @@ p {
 }
 
 .keyboard {
-  padding: 10px;
+  margin: 0 auto;
+  padding: 20px 10px;
   border: 5px outset gray;
   width: 1200px;
-  height: 275px;
   background-color: silver;
   display: grid;
   grid-template-columns: repeat(23, 50px);
   grid-template-rows: repeat(6, 40px);
-  
-  /* Dash not allowed? */
-  
   grid-template-areas: 
   "escape ... f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 .... printscreen scrolllock pausebreak ... ... ... ... ..."
   "graveaccent one two three four five six seven eight nine zero dash equal backspace ... insert home pageup ... numlock numpadslash numpadasterisk numpadminus "
@@ -49,6 +67,7 @@ p {
   ;
   grid-gap: 1px;
   border-radius: 5px;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* Key Grid Areas */
