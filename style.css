@@ -58,12 +58,12 @@ p#output__key {
   grid-template-columns: repeat(23, 50px);
   grid-template-rows: repeat(6, 40px);
   grid-template-areas: 
-  "escape ... f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 .... printscreen scrolllock pausebreak ... ... ... ... ..."
-  "graveaccent one two three four five six seven eight nine zero dash equal backspace ... insert home pageup ... numlock numpadslash numpadasterisk numpadminus "
-  "tab q w e r t y u i o p openbracket closedbracket backslash ... delete endkey pagedown ... numpad7 numpad8 numpad9 numpadplus"
-  "capslock a s d f g h j k l semicolon apostrophe enter enter ... ... ... ... ... numpad4 numpad5 numpad6 numpadplus"
-  "leftshift leftshift z x c v b n m comma period slash rightshift rightshift ... ... uparrow ... ... numpad1 numpad2 numpad3 numpadenter"
-  "leftctrl leftwinkey leftalt spacebar spacebar spacebar spacebar spacebar spacebar spacebar rightalt rightwinkey contextmenu rightctrl ... leftarrow downarrow rightarrow ... numpad0 numpad0 numpadperiod numpadenter"
+  "Escape ... F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 .... PrintScreen ScrollLock PauseBreak ... ... ... ... ..."
+  "Backquote Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Minus Equal Backspace ... Insert Home PageUp ... NumLock NumpadDivide NumpadMultiply NumpadSubtract "
+  "Tab KeyQ KeyW KeyE KeyR KeyT KeyY KeyU KeyI KeyO KeyP BracketLeft BracketRight Backslash ... Delete End PageDown ... Numpad7 Numpad8 Numpad9 NumpadAdd"
+  "CapsLock KeyA KeyS KeyD KeyF KeyG KeyH KeyJ KeyK KeyL Semicolon Quote Enter Enter ... ... ... ... ... Numpad4 Numpad5 Numpad6 NumpadAdd"
+  "ShiftLeft ShiftLeft KeyZ KeyX KeyC KeyV KeyB KeyN KeyM Comma Period Slash ShiftRight ShiftRight ... ... ArrowUp ... ... Numpad1 Numpad2 Numpad3 NumpadEnter"
+  "ControlLeft OSLeft AltLeft Space Space Space Space Space Space Space AltRight OSRight ContextMenu ControlRight ... ArrowLeft ArrowDown ArrowRight ... Numpad0 Numpad0 NumpadDecimal NumpadEnter"
   ;
   grid-gap: 1px;
   border-radius: 5px;
@@ -72,420 +72,420 @@ p#output__key {
 
 /* Key Grid Areas */
 
-#backspace {
-  grid-area: backspace;
+#Backspace {
+  grid-area: Backspace;
 }
 
-#tab {
-  grid-area: tab;
+#Tab {
+  grid-area: Tab;
 }
 
-#enter {
-  grid-area: enter;
+#Enter {
+  grid-area: Enter;
 }
 
-#numpadenter {
-  grid-area: numpadenter;
+#NumpadEnter {
+  grid-area: NumpadEnter;
 }
 
-#leftshift {
-    grid-area: leftshift;
+#ShiftLeft {
+    grid-area: ShiftLeft;
   }
 
-#rightshift {
-  grid-area: rightshift;
+#ShiftRight {
+  grid-area: ShiftRight;
 }
 
-#leftctrl {
-  grid-area: leftctrl;
+#ControlLeft {
+  grid-area: ControlLeft;
 }
 
-#rightctrl {
-    grid-area: rightctrl;
+#ControlRight {
+    grid-area: ControlRight;
   }
 
-#leftalt {
-  grid-area: leftalt;
+#AltLeft {
+  grid-area: AltLeft;
 }
 
-#rightalt {
-  grid-area: rightalt;
+#AltRight {
+  grid-area: AltRight;
 }
 
-#spacebar {
-  grid-area: spacebar;
+#PauseBreak {
+  grid-area: PauseBreak;
 }
 
-#pausebreak {
-  grid-area: pausebreak;
+#CapsLock {
+  grid-area: CapsLock;
 }
 
-#capslock {
-  grid-area: capslock;
+#Escape {
+  grid-area: Escape;
 }
 
-#escape {
-  grid-area: escape;
+#Space {
+  grid-area: Space;
 }
 
-#pageup {
-  grid-area: pageup;
+#PageUp {
+  grid-area: PageUp;
 }
 
-#pagedown {
-  grid-area: pagedown;
+#PageDown {
+  grid-area: PageDown;
 }
 
-#endkey {
-  grid-area: endkey;
+#End {
+  grid-area: End;
 }
 
-#home {
-  grid-area: home;
+#Home {
+  grid-area: Home;
 }
 
-#leftarrow {
-  grid-area: leftarrow;
+#ArrowLeft {
+  grid-area: ArrowLeft;
 }
 
-#rightarrow {
-  grid-area: rightarrow;
+#ArrowRight {
+  grid-area: ArrowRight;
 }
 
-#uparrow {
-  grid-area: uparrow;
+#ArrowUp {
+  grid-area: ArrowUp;
 }
 
-#downarrow {
-  grid-area: downarrow;
+#ArrowDown {
+  grid-area: ArrowDown;
 }
 
-#printscreen {
-  grid-area: printscreen;
+#PrintScreen {
+  grid-area: PrintScreen;
 }
 
-#insert {
-  grid-area: insert;
+#Insert {
+  grid-area: Insert;
 }
 
-#delete {
-  grid-area: delete;
+#Delete {
+  grid-area: Delete;
 }
 
-#zero {
-  grid-area: zero;
+#Digit0 {
+  grid-area: Digit0;
 }
 
-#one {
-  grid-area: one;
+#Digit1 {
+  grid-area: Digit1;
 }
 
-#two {
-  grid-area: two;
+#Digit2 {
+  grid-area: Digit2;
 }
 
-#three {
-  grid-area: three;
+#Digit3 {
+  grid-area: Digit3;
 }
 
-#four {
-  grid-area: four;
+#Digit4 {
+  grid-area: Digit4;
 }
 
-#five {
-  grid-area: five;
+#Digit5 {
+  grid-area: Digit5;
 }
 
-#six {
-  grid-area: six;
+#Digit6 {
+  grid-area: Digit6;
 }
 
-#seven {
-  grid-area: seven;
+#Digit7 {
+  grid-area: Digit7;
 }
 
-#eight {
-  grid-area: eight;
+#Digit8 {
+  grid-area: Digit8;
 }
 
-#nine {
-  grid-area: nine;
+#Digit9 {
+  grid-area: Digit9;
 }
 
-#a {
-  grid-area: a;
+#KeyA {
+  grid-area: KeyA;
 }
 
-#b {
-  grid-area: b;
+#KeyB {
+  grid-area: KeyB;
 }
 
-#c {
-  grid-area: c;
+#KeyC {
+  grid-area: KeyC;
 }
 
-#d {
-  grid-area: d;
+#KeyD {
+  grid-area: KeyD;
 }
 
-#e {
-  grid-area: e;
+#KeyE {
+  grid-area: KeyE;
 }
 
-#f {
-  grid-area: f;
+#KeyF {
+  grid-area: KeyF;
 }
 
-#g {
-  grid-area: g;
+#KeyG {
+  grid-area: KeyG;
 }
 
-#h {
-  grid-area: h;
+#KeyH {
+  grid-area: KeyH;
 }
 
-#i {
-  grid-area: i;
+#KeyI {
+  grid-area: KeyI;
 }
 
-#j {
-  grid-area: j;
+#KeyJ {
+  grid-area: KeyJ;
 }
 
-#k {
-  grid-area: k;
+#KeyK {
+  grid-area: KeyK;
 }
 
-#l {
-  grid-area: l;
+#KeyL {
+  grid-area: KeyL;
 }
 
-#m {
-  grid-area: m;
+#KeyM {
+  grid-area: KeyM;
 }
 
-#n {
-  grid-area: n;
+#KeyN {
+  grid-area: KeyN;
 }
 
-#o {
-  grid-area: o;
+#KeyO {
+  grid-area: KeyO;
 }
 
-#p {
-  grid-area: p;
+#KeyP {
+  grid-area: KeyP;
 }
 
-#q {
-  grid-area: q;
+#KeyQ {
+  grid-area: KeyQ;
 }
 
-#r {
-  grid-area: r;
+#KeyR {
+  grid-area: KeyR;
 }
 
-#s {
-  grid-area: s;
+#KeyS {
+  grid-area: KeyS;
 }
 
-#t {
-  grid-area: t;
+#KeyT {
+  grid-area: KeyT;
 }
 
-#u {
-  grid-area: u;
+#KeyU {
+  grid-area: KeyU;
 }
 
-#v {
-  grid-area: v;
+#KeyV {
+  grid-area: KeyV;
 }
 
-#w {
-  grid-area: w;
+#KeyW {
+  grid-area: KeyW;
 }
 
-#x {
-  grid-area: x;
+#KeyX {
+  grid-area: KeyX;
 }
 
-#y {
-  grid-area: y;
+#KeyY {
+  grid-area: KeyY;
 }
 
-#z {
-  grid-area: z;
+#KeyZ {
+  grid-area: KeyZ;
 }
 
-#leftwinkey {
-  grid-area: leftwinkey;
+#OSLeft {
+  grid-area: OSLeft;
 }
 
-#rightwinkey {
-  grid-area: rightwinkey;
+#OSRight {
+  grid-area: OSRight;
 }
 
-#contextmenu {
-  grid-area: contextmenu;
+#ContextMenu {
+  grid-area: ContextMenu;
 }
 
-#numpad0 {
-  grid-area: numpad0;
+#Numpad0 {
+  grid-area: Numpad0;
 }
 
-#numpad1 {
-  grid-area: numpad1;
+#Numpad1 {
+  grid-area: Numpad1;
 }
 
-#numpad2 {
-  grid-area: numpad2;
+#Numpad2 {
+  grid-area: Numpad2;
 }
 
-#numpad3 {
-  grid-area: numpad3;
+#Numpad3 {
+  grid-area: Numpad3;
 }
 
-#numpad4 {
-  grid-area: numpad4;
+#Numpad4 {
+  grid-area: Numpad4;
 }
 
-#numpad5 {
-  grid-area: numpad5;
+#Numpad5 {
+  grid-area: Numpad5;
 }
 
-#numpad6 {
-  grid-area: numpad6;
+#Numpad6 {
+  grid-area: Numpad6;
 }
 
-#numpad7 {
-  grid-area: numpad7;
+#Numpad7 {
+  grid-area: Numpad7;
 }
 
-#numpad8 {
-  grid-area: numpad8;
+#Numpad8 {
+  grid-area: Numpad8;
 }
 
-#numpad9 {
-  grid-area: numpad9;
+#Numpad9 {
+  grid-area: Numpad9;
 }
 
-#numpadasterisk {
-  grid-area: numpadasterisk;
+#NumpadMultiply {
+  grid-area: NumpadMultiply;
 }
 
-#numpadplus {
-  grid-area: numpadplus;
+#NumpadAdd {
+  grid-area: NumpadAdd;
 }
 
-#numpadminus {
-  grid-area: numpadminus;
+#NumpadSubtract {
+  grid-area: NumpadSubtract;
 }
 
-#numpadperiod {
-  grid-area: numpadperiod;
+#NumpadDecimal {
+  grid-area: NumpadDecimal;
 }
 
-#numpadslash {
-  grid-area: numpadslash;
+#NumpadDivide {
+  grid-area: NumpadDivide;
 }
 
-#f1 {
-  grid-area: f1;
+#F1 {
+  grid-area: F1;
 }
 
-#f2 {
-  grid-area: f2;
+#F2 {
+  grid-area: F2;
 }
 
-#f3 {
-  grid-area: f3;
+#F3 {
+  grid-area: F3;
 }
 
-#f4 {
-  grid-area: f4;
+#F4 {
+  grid-area: F4;
 }
 
-#f5 {
-  grid-area: f5;
+#F5 {
+  grid-area: F5;
 }
 
-#f6 {
-  grid-area: f6;
+#F6 {
+  grid-area: F6;
 }
 
-#f7 {
-  grid-area: f7;
+#F7 {
+  grid-area: F7;
 }
 
-#f8 {
-  grid-area: f8;
+#F8 {
+  grid-area: F8;
 }
 
-#f9 {
-  grid-area: f9;
+#F9 {
+  grid-area: F9;
 }
 
-#f10 {
-  grid-area: f10;
+#F10 {
+  grid-area: F10;
 }
 
-#f11 {
-  grid-area: f11;
+#F11 {
+  grid-area: F11;
 }
 
-#f12 {
-  grid-area: f12;
+#F12 {
+  grid-area: F12;
 }
 
-#numlock {
-  grid-area: numlock;
+#NumLock {
+  grid-area: NumLock;
 }
 
-#scrolllock {
-  grid-area: scrolllock;
+#ScrollLock {
+  grid-area: ScrollLock;
 }
 
-#semicolon {
-  grid-area: semicolon;
+#Semicolon {
+  grid-area: Semicolon;
 }
 
-#equal {
-  grid-area: equal;
+#Equal {
+  grid-area: Equal;
 }
 
-#comma {
-  grid-area: comma;
+#Comma {
+  grid-area: Comma;
 }
 
-#dash {
-  grid-area: dash;
+#Minus {
+  grid-area: Minus;
 }
 
-#period {
-  grid-area: period;
+#Period {
+  grid-area: Period;
 }
 
-#slash {
-  grid-area: slash;
+#Slash {
+  grid-area: Slash;
 }
 
-#graveaccent {
-  grid-area: graveaccent;
+#Backquote {
+  grid-area: Backquote;
 }
 
-#openbracket {
-  grid-area: openbracket;
+#BracketLeft {
+  grid-area: BracketLeft;
 }
 
-#backslash {
-  grid-area: backslash;
+#Backslash {
+  grid-area: Backslash;
 }
 
-#closedbracket {
-  grid-area: closedbracket;
+#BracketRight {
+  grid-area: BracketRight;
 }
 
-#apostrophe {
-  grid-area: apostrophe;
+#Quote {
+  grid-area: Quote;
 }
 
 
