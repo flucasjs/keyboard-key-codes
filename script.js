@@ -16,13 +16,50 @@ var keycodes = [{"id":8,"name":"Backspace"},{"id":9,"name":"Tab"},{"id":13,"name
                 {"id":192,"name":"Backquote"},{"id":219,"name":"BracketLeft"},{"id":220,"name":"Backslash"},{"id":221,"name":"BracketRight"},{"id":222,"name":"Quote"}];
 
 document.addEventListener("click", (event) => {
+
+    let which = document.getElementById("output__which");
+    let code = document.getElementById("output__code");
+
+    //To Do
+    let key = document.getElementById("output__key");
+    let location = document.getElementById("output__location");
+
 		if (event.target.dataset.showcode != undefined) {
     		let value = event.target.id;
     		for (let i = 0; i <= keycodes.length; i++) {
         	if (value == keycodes[i]['name']) {
-            let text = document.getElementById("output__key");
-            text.innerHTML = keycodes[i]['id'];
+            which.innerHTML = keycodes[i]['id'];
+            code.innerHTML = value;
           }
         }
     }
+});
+
+document.addEventListener("keyup", (event) => {
+    let value = event.which;
+    let text = document.getElementById("output__which");
+    text.innerHTML = value;
+});
+
+document.addEventListener("keyup", (event) => {
+    let value = event.code;
+    let text = document.getElementById("output__code");
+    text.innerHTML = value;
+});
+
+document.addEventListener("keyup", (event) => {
+  let value = event.key;
+  let which = event.which;
+  let text = document.getElementById("output__key");
+  if (which == 32) {
+    text.innerHTML = "(space character)"; 
+  } else {
+    text.innerHTML = value;
+  }
+});
+
+document.addEventListener("keyup", (event) => {
+  let value = event.location;
+  let text = document.getElementById("output__location");
+  text.innerHTML = value;
 });

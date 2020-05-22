@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(174, 174, 174, 0.1);
+  background-color: rgba(0, 0, 0, 0.678);
 }
 
 .container {
@@ -14,27 +14,45 @@ body {
 }
 
 #output {
+  display: flex;
+  flex-flow: row wrap;
   margin: 0 auto 25px;
-  width: 200px;
-  height: 85px;
-  overflow: auto;
+  align-items: baseline;
+  width: 1200px;
   font-size: 25px;
   font-family: 'Righteous', cursive;
+  background: rgb(180, 180, 184);
+  border: 5px outset gray;
 }
 
-p#output__label {
-  float: left;
+.label {
+  width: 295px;
 }
 
-p#output__key {
-  float: right;
+.label p {
+  text-align: center;
 }
+
+div p#output__which {
+  
+}
+
+div p#output__code {
+  
+}
+
+div p#output__key {
+  
+}
+
+div p#output__location {
+  
+}
+
 
 .key {
   font-size: 12px;
   background-color: rgb(255, 255, 255);
-  padding-left: 7.5px;
-  padding-top: 2.5px;
   border-radius: 5px;
   border: 2px outset gray;
 }

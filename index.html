@@ -10,9 +10,25 @@
 <body>
     <div class="container">
         <div id="output">
-            <p id="output__label">Key Code:</p>
-            <p id="output__key"></p>
+            <div class="label">
+                <p>event.which:</p>
+                <p id="output__which"></p>
+            </div>
+            <div class="label">
+                <p>event.code:</p>
+                <p id="output__code"></p>
+            </div>
+            <div class="label">
+                <p >event.key:</p>
+                <p id="output__key"></p>
+            </div>
+            <div class="label">
+                <p>event.location:</p>
+                <p id="output__location"></p>
+            </div>
         </div>
+    </div>
+    <div class="container">
         <div class="keyboard">
             <div class="key" id="Backspace" data-showcode>←</div>
             <div class="key" id="Tab" data-showcode>TAB</div>
