@@ -22,6 +22,8 @@ document.addEventListener("click", (event) => {
     let key = document.getElementById("output__key");
     let location = document.getElementById("output__location");
 
+    key.style.color = "";
+
 		if (event.target.dataset.showcode != undefined) {
     		let value = event.target.id;
     		for (let i = 0; i <= keycodes.length; i++) {
@@ -33,33 +35,35 @@ document.addEventListener("click", (event) => {
           }
         }
     }
+
 });
 
 document.addEventListener("keyup", (event) => {
-    let value = event.which;
-    let text = document.getElementById("output__which");
-    text.innerHTML = value;
-});
 
-document.addEventListener("keyup", (event) => {
-    let value = event.code;
-    let text = document.getElementById("output__code");
-    text.innerHTML = value;
-});
+    let which = document.getElementById("output__which");
+    let code = document.getElementById("output__code");
+    let key = document.getElementById("output__key");
+    let location = document.getElementById("output__location");
 
-document.addEventListener("keyup", (event) => {
-  let value = event.key;
-  let which = event.which;
-  let text = document.getElementById("output__key");
-  if (which == 32) {
-    text.innerHTML = "(space character)"; 
-  } else {
-    text.innerHTML = value;
-  }
-});
+    key.style.color = "";
 
-document.addEventListener("keyup", (event) => {
-  let value = event.location;
-  let text = document.getElementById("output__location");
-  text.innerHTML = value;
+    which.innerHTML = event.which;
+    code.innerHTML = event.code;
+    location.innerHTML = event.location;
+
+    if (event.code == "Space") {
+      key.innerHTML = "(space character)"
+      key.style.color = "rgba(0, 0, 0, 0.1)";
+    } else {
+      key.innerHTML = event.key;
+    }
+
+    
+
+    let hoverElement = document.getElementById(event.code)
+    hoverElement.style.background = "aqua";
+    setTimeout(() => {
+      hoverElement.style.background = "";
+    }, 60);
+
 });
