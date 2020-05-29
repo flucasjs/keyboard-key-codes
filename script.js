@@ -25,15 +25,28 @@ document.addEventListener("click", (event) => {
     key.style.color = "";
 
 		if (event.target.dataset.showcode != undefined) {
-    		let value = event.target.id;
+
+        let element = event.target.id;
+
     		for (let i = 0; i <= keycodes.length; i++) {
-        	if (value == keycodes[i]['code']) {
+
+        	if (element == keycodes[i]['code']) {
+
+            code.innerHTML = keycodes[i]['code'];
+            key.innerHTML = keycodes[i]['key']
             which.innerHTML = keycodes[i]['id'];
-            code.innerHTML = value;
-            key.innerHTML = keycodes[i]['key'];
             location.innerHTML = keycodes[i]['location'];
+
+            if (key.innerHTML == "(space character)") {
+              
+              key.style.color = "rgba(0, 0, 0, 0.1)";
+
+            }
+
           }
+
         }
+
     }
 
 });
