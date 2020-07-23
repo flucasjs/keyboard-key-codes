@@ -51,7 +51,7 @@ document.addEventListener("click", (event) => {
 
 });
 
-document.addEventListener("keyup", (event) => {
+document.addEventListener("keydown", (event) => {
 
     let which = document.getElementById("output__which");
     let code = document.getElementById("output__code");
