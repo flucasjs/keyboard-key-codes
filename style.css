@@ -29,7 +29,7 @@ body {
   align-items: baseline;
   width: 1200px;
   font-size: 25px;
-  font-family: 'Righteous', cursive;
+  font-family: 'Righteous', Helvetica, sans-serif;
   background: rgb(180, 180, 184);
   border: 5px outset gray;
 }
@@ -78,7 +78,7 @@ body {
   ;
   grid-gap: 1px;
   border-radius: 5px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2', Helvetica, sans-serif;
 }
 
 /* Key Grid Areas */
