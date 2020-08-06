@@ -31,6 +31,8 @@ document.addEventListener("click", (event) => {
 
 document.addEventListener("keydown", (event) => {
 
+    if (event.repeat) { return; }
+
     let which = document.getElementById("output__which");
     let code = document.getElementById("output__code");
     let key = document.getElementById("output__key");
@@ -53,11 +55,18 @@ document.addEventListener("keydown", (event) => {
       
     }
 
-    let hoverElement = document.getElementById(event.code.toLowerCase());
-    hoverElement.style.background = "aqua";
-    setTimeout(() => (hoverElement.style.background = ""), 60);
+    displayKeyPress(document.getElementById(event.code.toLowerCase()));
 
 });
+
+// -------------------------------------------------- FUNCTION DEFINITIONS -------------------------------------------------- //
+
+function displayKeyPress(element) {
+
+  element.style.background = "rgb(0, 200, 255)";
+  setTimeout(() => (element.style.background = ""), 100);
+
+}
 
 // -------------------------------------------------- GLOBAL VARIABLES -------------------------------------------------- //
 
@@ -73,8 +82,8 @@ let keycodes = { backspace: {id: 8, code: "Backspace", key: "Backspace", locatio
                  key: "ArrowRight", location: 0}, arrowdown: {id: 40, code: "ArrowDown", key: "ArrowDown", location: 0}, printscreen: {id: 44, code: "PrintScreen", key: "Print Screen", location: 0}, 
                  scroll: {id: 45, code: "Insert", key: "Insert", location: 0}, delete: {id: 46, code: "Delete", key: "Delete", location: 0}, digit0: {id: 48, code: "Digit0", key: "0", location: 0}, 
                  digit1: {id: 49, code: "Digit1", key: "1", location: 0}, digit2: {id: 50, code: "Digit2", key: "2", location: 0}, digit3: {id: 51, code: "Digit3", key: "3", location: 0}, 
-                 digit4: {id: 52, code: "Digit4", key: "4", location: 0}, digit5: {id: 53, code: "Digit5", key: "5", location: 0}, digit6: {id: 54, code: "Digit6", key: "6", location: 0}, 
                  digit7: {id: 55, code: "Digit7", key: "7", location: 0}, digit8: {id: 56, code: "Digit8", key: "8", location: 0}, digit9: {id: 57, code: "Digit9", key: "9", 
+                 digit4: {id: 52, code: "Digit4", key: "4", location: 0}, digit5: {id: 53, code: "Digit5", key: "5", location: 0}, digit6: {id: 54, code: "Digit6", key: "6", location: 0}, 
                  location: 0}, keya: {id: 65, code: "KeyA", key: "a", location: 0}, keyb: {id: 66, code: "KeyB", key: "b", location: 0}, keyc: {id: 67, code: "KeyC", key: "c", location: 0}, 
                  keyd: {id: 68, code: "KeyD", key: "d", location: 0}, keye: {id: 69, code: "KeyE", key: "r", location: 0}, keyf: {id: 70, code: "KeyF", key: "f", location: 0}, 
                  keyg: {id: 71, code: "KeyG", key: "g", location: 0}, keyh: {id: 72, code: "KeyH", key: "h", location: 0}, keyi: {id: 73, code: "KeyI", key: "i", location: 0}, 
