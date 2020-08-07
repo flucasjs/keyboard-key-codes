@@ -1,24 +1,27 @@
 // -------------------------------------------------- EVENT LISTENERS -------------------------------------------------- //
 
+// Event listener for virtual keyboard button click.
 document.addEventListener("click", (event) => {
 
+    // Select DOM elements.
     let which = document.getElementById("output__which");
     let code = document.getElementById("output__code");
     let key = document.getElementById("output__key");
     let location = document.getElementById("output__location");
 
-    key.style.color = "";
-
+    // If user clicks on virtual keyboard key, then display the relevant KeyboardEvent properties.
 		if (event.target.dataset.showcode != undefined) {
 
         // Element id's are named after the KeyboardEvent.code property.
         let elementID = event.target.id;
 
+        // Display KeyboardEvent properties.
         code.innerHTML = keycodes[elementID]['code'];
         key.innerHTML = keycodes[elementID]['key']
         which.innerHTML = keycodes[elementID]['id'];
         location.innerHTML = keycodes[elementID]['location'];
 
+        // Edge case for space bar button click on virtual keyboard.
         if (key.innerHTML == "(space character)") {
           
           key.style.color = "rgba(0, 0, 0, 0.1)";
@@ -29,10 +32,13 @@ document.addEventListener("click", (event) => {
 
 });
 
+// Event listener for keyboard button press.
 document.addEventListener("keydown", (event) => {
 
+    // Prevent keyboard event if key is held down.
     if (event.repeat) { return; }
 
+    // Select DOM elements.
     let which = document.getElementById("output__which");
     let code = document.getElementById("output__code");
     let key = document.getElementById("output__key");
@@ -40,10 +46,12 @@ document.addEventListener("keydown", (event) => {
 
     key.style.color = "";
 
+    // Display KeyboardEvent properties.
     which.innerHTML = event.which;
     code.innerHTML = event.code;
     location.innerHTML = event.location;
 
+    // Edge case for space bar key press.
     if (event.code == "Space") {
 
       key.innerHTML = "(space character)"
@@ -55,12 +63,14 @@ document.addEventListener("keydown", (event) => {
       
     }
 
+    // Visually indiate on the virtual keyboard which button the user pressed.
     displayKeyPress(document.getElementById(event.code.toLowerCase()));
 
 });
 
 // -------------------------------------------------- FUNCTION DEFINITIONS -------------------------------------------------- //
 
+// Visually indicates which key was pressed on the keyboard.
 function displayKeyPress(element) {
 
   element.style.background = "rgb(0, 200, 255)";
@@ -70,6 +80,7 @@ function displayKeyPress(element) {
 
 // -------------------------------------------------- GLOBAL VARIABLES -------------------------------------------------- //
 
+// Object containing all relevant KeyboardEvent properties.
 let keycodes = { backspace: {id: 8, code: "Backspace", key: "Backspace", location: 0}, tab: {id: 9, code: "Tab", key: "Tab", location: 0}, enter: {id: 13, code: "Enter", key: "Enter", location: 0},
                  numpadenter: {id: 13, code: "NumpadEnter", key: "NumpadEnter", location: 3}, shiftleft: {id: 16, code: "ShiftLeft", key: "ShiftLeft", location: 1},
                  shiftright: {id: 16, code: "ShiftRight", key: "ShiftRight", location: "2"}, controlleft: {id: 17, code: "ControlLeft", key: "Control", location: 1},
