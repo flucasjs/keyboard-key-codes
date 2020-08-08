@@ -44,8 +44,6 @@ document.addEventListener("keydown", (event) => {
     let key = document.getElementById("output__key");
     let location = document.getElementById("output__location");
 
-    key.style.color = "";
-
     // Display KeyboardEvent properties.
     which.innerHTML = event.which;
     code.innerHTML = event.code;
