@@ -3,6 +3,13 @@
 // Event listener for virtual keyboard button click.
 document.addEventListener("click", (event) => {
 
+    let element = event.target.closest(".key");
+
+    if (!element) return;
+    if (!document.querySelector(".keyboard-keys").contains(element)) return;
+
+    createRipple(event, element);
+
     // Select DOM elements.
     let which = document.getElementById("output__which");
     let code = document.getElementById("output__code");
@@ -53,10 +60,11 @@ document.addEventListener("keydown", (event) => {
     if (event.code == "Space") {
 
       key.innerHTML = "(space character)"
-      key.style.color = "rgba(0, 0, 0, 0.1)";
+      key.style.color = "rgba(186, 178, 181, 0.25)";
 
     } else {
 
+      key.style.color = "#FFF";
       key.innerHTML = event.key;
       
     }
@@ -73,6 +81,53 @@ function displayKeyPress(element) {
 
   element.style.background = "rgb(0, 200, 255)";
   setTimeout(() => (element.style.background = ""), 100);
+
+}
+
+function createRipple(event, key) {
+
+  const container = document.querySelector(".keyboard-keys");
+  const section = document.querySelector(".keyboard-outer-flex-container");
+  const wrapper = createWrapper(key);
+  const circle = document.createElement("span");
+  const diameter = Math.max(key.clientWidth, key.clientHeight);
+  const radius = diameter / 2;
+  circle.style.width = circle.style.height = `${diameter}px`;
+  circle.style.left = `${event.clientX - (container.offsetLeft + key.offsetLeft + radius)}px`;
+  circle.style.top = `${event.clientY - (container.offsetTop + section.offsetTop + key.offsetTop + radius)}px`;
+  // console.log(`event.clientX: ${event.clientX}px` + `event.clientY: ${event.clientY}px `)
+  circle.classList.add("ripple");
+
+  wrapper.append(circle);
+  key.append(wrapper);
+
+  setTimeout(() => {
+
+    key.removeChild(key.querySelector("#wrapper"));
+
+  }, 1000)
+
+}
+
+function createWrapper(key) {
+
+  const keyboard = document.querySelector(".keyboard-keys")
+  const container = document.querySelector(".keyboard-outer-flex-container")
+  const elemWrapper = document.createElement("div");
+  elemWrapper.style.position = "fixed";
+  elemWrapper.style.width = `${key.clientWidth}px`;
+  elemWrapper.style.height = `${key.clientHeight}px`;
+  // Adding 2px to clear the 2px border on top and left sides.
+  elemWrapper.style.left = `${key.offsetLeft + keyboard.offsetLeft + 2}px`;
+  elemWrapper.style.top = `${key.offsetTop + container.offsetTop + keyboard.offsetTop + 2}px`;
+  // console.log(`${key.style.borderWidth}`)
+  elemWrapper.style.borderRadius = "5px";
+  // console.log(`key: ${key.offsetTop}px ` + `container: ${container.offsetTop}px`)
+  elemWrapper.style.background = "transparent";
+  elemWrapper.style.overflow = "hidden";
+  elemWrapper.id = "wrapper";
+  
+  return elemWrapper;
 
 }
 
