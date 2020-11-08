@@ -3,155 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script defer src="script.js"></script>
-    <title>Keybody Key Codes</title>
+    <title>Keyboard Key Codes</title>
 </head>
 <body>
-    <div class="app">
-        <div class="container">
-            <div id="output">
-                <div class="label">
-                    <p>event.which:</p>
-                    <p id="output__which"> - </p>
-                </div>
-                <div class="label">
-                    <p>event.code:</p>
-                    <p id="output__code"> - </p>
-                </div>
-                <div class="label">
-                    <p >event.key:</p>
-                    <p id="output__key"> - </p>
-                </div>
-                <div class="label">
-                    <p>event.location:</p>
-                    <p id="output__location"> - </p>
-                </div>
+    <div class="longboi"></div>
+        <div id="output">
+            <div class="label">
+                <p>event.which:</p>
+                <p id="output__which"> - </p>
+            </div>
+            <div class="label">
+                <p>event.code:</p>
+                <p id="output__code"> - </p>
+            </div>
+            <div class="label">
+                <p>event.key:</p>
+                <p id="output__key"> - </p>
+            </div>
+            <div class="label">
+                <p>event.location:</p>
+                <p id="output__location"> - </p>
             </div>
         </div>
-        <div class="container">
-            <div class="keyboard">
-                <div class="key" id="backspace" data-showcode>←</div>
-                <div class="key" id="tab" data-showcode>TAB</div>
-                <div class="key" id="enter" data-showcode>ENTER</div>
-                <div class="key" id="numpadenter" data-showcode>ENT</div>
-                <div class="key" id="shiftleft" data-showcode>SHIFT</div>
-                <div class="key" id="shiftright" data-showcode>SHIFT</div>
-                <div class="key" id="controlleft" data-showcode>CTRL</div>
-                <div class="key" id="controlright" data-showcode>CTRL</div>
-                <div class="key" id="altleft" data-showcode>ALT</div>
-                <div class="key" id="altright" data-showcode>ALT</div>
-                <div class="key" id="pausebreak" data-showcode>Break</div>
-                <div class="key" id="capslock" data-showcode>CAPS</div>
-                <div class="key" id="rscape" data-showcode>ESC</div>
-                <div class="key" id="space" data-showcode></div>
-                <div class="key" id="pageup" data-showcode>PGU</div>
-                <div class="key" id="pagedown" data-showcode>PGD</div>
-                <div class="key" id="end" data-showcode>END</div>
-                <div class="key" id="home" data-showcode>HME</div>
-                <div class="key" id="arrowleft" data-showcode>◄</div>
-                <div class="key" id="arrowright" data-showcode>►</div>
-                <div class="key" id="arrowup" data-showcode>▲</div>
-                <div class="key" id="arrowdown" data-showcode>▼</div>
-                <div class="key" id="printscreen" data-showcode>PSC</div>
-                <div class="key" id="insert" data-showcode>INS</div>
-                <div class="key" id="delete" data-showcode>DEL</div>
-                <div class="key" id="digit0" data-showcode>0 )</div>
-                <div class="key" id="digit1" data-showcode>1 !</div>
-                <div class="key" id="digit2" data-showcode>2 @</div>
-                <div class="key" id="digit3" data-showcode>3 #</div>
-                <div class="key" id="digit4" data-showcode>4 $</div>
-                <div class="key" id="digit5" data-showcode>5 %</div>
-                <div class="key" id="digit6" data-showcode>6 ^</div>
-                <div class="key" id="digit7" data-showcode>7 &</div>
-                <div class="key" id="digit8" data-showcode>8 *</div>
-                <div class="key" id="digit9" data-showcode>9 (</div>
-                <div class="key" id="keya" data-showcode>A</div>
-                <div class="key" id="keyb" data-showcode>B</div>
-                <div class="key" id="keyc" data-showcode>C</div>
-                <div class="key" id="keyd" data-showcode>D</div>
-                <div class="key" id="keye" data-showcode>E</div>
-                <div class="key" id="keyf" data-showcode>F</div>
-                <div class="key" id="keyg" data-showcode>G</div>
-                <div class="key" id="keyh" data-showcode>H</div>
-                <div class="key" id="keyi" data-showcode>I</div>
-                <div class="key" id="keyj" data-showcode>J</div>
-                <div class="key" id="keyk" data-showcode>K</div>
-                <div class="key" id="keyl" data-showcode>L</div>
-                <div class="key" id="keym" data-showcode>M</div>
-                <div class="key" id="keyn" data-showcode>N</div>
-                <div class="key" id="keyo" data-showcode>O</div>
-                <div class="key" id="keyp" data-showcode>P</div>
-                <div class="key" id="keyq" data-showcode>Q</div>
-                <div class="key" id="keyr" data-showcode>R</div>
-                <div class="key" id="keys" data-showcode>S</div>
-                <div class="key" id="keyt" data-showcode>T</div>
-                <div class="key" id="keyu" data-showcode>U</div>
-                <div class="key" id="keyv" data-showcode>V</div>
-                <div class="key" id="keyw" data-showcode>W</div>
-                <div class="key" id="keyx" data-showcode>X</div>
-                <div class="key" id="keyy" data-showcode>Y</div>
-                <div class="key" id="keyz" data-showcode>Z</div>
-                <div class="key" id="osleft" data-showcode>lwk</div>
-                <div class="key" id="osright" data-showcode>rwk</div>
-                <div class="key" id="contextmenu" data-showcode>ctx</div>
-                <div class="key" id="numpad0" data-showcode>0</div>
-                <div class="key" id="numpad1" data-showcode>1</div>
-                <div class="key" id="numpad2" data-showcode>2</div>
-                <div class="key" id="numpad3" data-showcode>3</div>
-                <div class="key" id="numpad4" data-showcode>4</div>
-                <div class="key" id="numpad5" data-showcode>5</div>
-                <div class="key" id="numpad6" data-showcode>6</div>
-                <div class="key" id="numpad7" data-showcode>7</div>
-                <div class="key" id="numpad8" data-showcode>8</div>
-                <div class="key" id="numpad9" data-showcode>9</div>
-                <div class="key" id="numpadmultiply" data-showcode>*</div>
-                <div class="key" id="numpadadd" data-showcode>+</div>
-                <div class="key" id="numpadsubtract" data-showcode>-</div>
-                <div class="key" id="numpaddecimal" data-showcode>.</div>
-                <div class="key" id="numpaddivide" data-showcode>/</div>
-                <div class="key" id="f1" data-showcode>F1</div>
-                <div class="key" id="f2" data-showcode>F2</div>
-                <div class="key" id="f3" data-showcode>F3</div>
-                <div class="key" id="f4" data-showcode>F4</div>
-                <div class="key" id="f5" data-showcode>F5</div>
-                <div class="key" id="f6" data-showcode>F6</div>
-                <div class="key" id="f7" data-showcode>F7</div>
-                <div class="key" id="f8" data-showcode>F8</div>
-                <div class="key" id="f9" data-showcode>F9</div>
-                <div class="key" id="f10" data-showcode>F10</div>
-                <div class="key" id="f11" data-showcode>F11</div>
-                <div class="key" id="f12" data-showcode>F12</div>
-                <div class="key" id="numlock" data-showcode>NUM</div>
-                <div class="key" id="scrolllock" data-showcode>SLK</div>
-                <div class="key" id="semicolon" data-showcode>; :</div>
-                <div class="key" id="equal" data-showcode>= +</div>
-                <div class="key" id="comma" data-showcode>, <</div>
-                <div class="key" id="minus" data-showcode>- _</div>
-                <div class="key" id="period" data-showcode>. ></div>
-                <div class="key" id="slash" data-showcode>/ ?</div>
-                <div class="key" id="backquote" data-showcode>` ~</div>
-                <div class="key" id="bracketleft" data-showcode>[ {</div>
-                <div class="key" id="backslash" data-showcode>\ |</div>
-                <div class="key" id="bracketright" data-showcode>] }</div>
-                <div class="key" id="quote" data-showcode>' "</div>
+        <div class="app">
+        <section class="container keyboard-outer-flex-container">
+            <div class="keyboard-inner-flex-container">
+                <div class="keyboard-keys">
+                    <div class="key" id="backspace" data-showcode>←</div>
+                    <div class="key" id="tab" data-showcode>TAB</div>
+                    <div class="key" id="enter" data-showcode>ENTER</div>
+                    <div class="key" id="numpadenter" data-showcode>ENT</div>
+                    <div class="key" id="shiftleft" data-showcode>SHIFT</div>
+                    <div class="key" id="shiftright" data-showcode>SHIFT</div>
+                    <div class="key" id="controlleft" data-showcode>CTRL</div>
+                    <div class="key" id="controlright" data-showcode>CTRL</div>
+                    <div class="key" id="altleft" data-showcode>ALT</div>
+                    <div class="key" id="altright" data-showcode>ALT</div>
+                    <div class="key" id="pausebreak" data-showcode>Break</div>
+                    <div class="key" id="capslock" data-showcode>CAPS</div>
+                    <div class="key" id="rscape" data-showcode>ESC</div>
+                    <div class="key" id="space" data-showcode></div>
+                    <div class="key" id="pageup" data-showcode>PGU</div>
+                    <div class="key" id="pagedown" data-showcode>PGD</div>
+                    <div class="key" id="end" data-showcode>END</div>
+                    <div class="key" id="home" data-showcode>HME</div>
+                    <div class="key" id="arrowleft" data-showcode>◄</div>
+                    <div class="key" id="arrowright" data-showcode>►</div>
+                    <div class="key" id="arrowup" data-showcode>▲</div>
+                    <div class="key" id="arrowdown" data-showcode>▼</div>
+                    <div class="key" id="printscreen" data-showcode>PSC</div>
+                    <div class="key" id="insert" data-showcode>INS</div>
+                    <div class="key" id="delete" data-showcode>DEL</div>
+                    <div class="key" id="digit0" data-showcode>0 )</div>
+                    <div class="key" id="digit1" data-showcode>1 !</div>
+                    <div class="key" id="digit2" data-showcode>2 @</div>
+                    <div class="key" id="digit3" data-showcode>3 #</div>
+                    <div class="key" id="digit4" data-showcode>4 $</div>
+                    <div class="key" id="digit5" data-showcode>5 %</div>
+                    <div class="key" id="digit6" data-showcode>6 ^</div>
+                    <div class="key" id="digit7" data-showcode>7 &</div>
+                    <div class="key" id="digit8" data-showcode>8 *</div>
+                    <div class="key" id="digit9" data-showcode>9 (</div>
+                    <div class="key" id="keya" data-showcode>A</div>
+                    <div class="key" id="keyb" data-showcode>B</div>
+                    <div class="key" id="keyc" data-showcode>C</div>
+                    <div class="key" id="keyd" data-showcode>D</div>
+                    <div class="key" id="keye" data-showcode>E</div>
+                    <div class="key" id="keyf" data-showcode>F</div>
+                    <div class="key" id="keyg" data-showcode>G</div>
+                    <div class="key" id="keyh" data-showcode>H</div>
+                    <div class="key" id="keyi" data-showcode>I</div>
+                    <div class="key" id="keyj" data-showcode>J</div>
+                    <div class="key" id="keyk" data-showcode>K</div>
+                    <div class="key" id="keyl" data-showcode>L</div>
+                    <div class="key" id="keym" data-showcode>M</div>
+                    <div class="key" id="keyn" data-showcode>N</div>
+                    <div class="key" id="keyo" data-showcode>O</div>
+                    <div class="key" id="keyp" data-showcode>P</div>
+                    <div class="key" id="keyq" data-showcode>Q</div>
+                    <div class="key" id="keyr" data-showcode>R</div>
+                    <div class="key" id="keys" data-showcode>S</div>
+                    <div class="key" id="keyt" data-showcode>T</div>
+                    <div class="key" id="keyu" data-showcode>U</div>
+                    <div class="key" id="keyv" data-showcode>V</div>
+                    <div class="key" id="keyw" data-showcode>W</div>
+                    <div class="key" id="keyx" data-showcode>X</div>
+                    <div class="key" id="keyy" data-showcode>Y</div>
+                    <div class="key" id="keyz" data-showcode>Z</div>
+                    <div class="key" id="osleft" data-showcode>lwk</div>
+                    <div class="key" id="osright" data-showcode>rwk</div>
+                    <div class="key" id="contextmenu" data-showcode>ctx</div>
+                    <div class="key" id="numpad0" data-showcode>0</div>
+                    <div class="key" id="numpad1" data-showcode>1</div>
+                    <div class="key" id="numpad2" data-showcode>2</div>
+                    <div class="key" id="numpad3" data-showcode>3</div>
+                    <div class="key" id="numpad4" data-showcode>4</div>
+                    <div class="key" id="numpad5" data-showcode>5</div>
+                    <div class="key" id="numpad6" data-showcode>6</div>
+                    <div class="key" id="numpad7" data-showcode>7</div>
+                    <div class="key" id="numpad8" data-showcode>8</div>
+                    <div class="key" id="numpad9" data-showcode>9</div>
+                    <div class="key" id="numpadmultiply" data-showcode>*</div>
+                    <div class="key" id="numpadadd" data-showcode>+</div>
+                    <div class="key" id="numpadsubtract" data-showcode>-</div>
+                    <div class="key" id="numpaddecimal" data-showcode>.</div>
+                    <div class="key" id="numpaddivide" data-showcode>/</div>
+                    <div class="key" id="f1" data-showcode>F1</div>
+                    <div class="key" id="f2" data-showcode>F2</div>
+                    <div class="key" id="f3" data-showcode>F3</div>
+                    <div class="key" id="f4" data-showcode>F4</div>
+                    <div class="key" id="f5" data-showcode>F5</div>
+                    <div class="key" id="f6" data-showcode>F6</div>
+                    <div class="key" id="f7" data-showcode>F7</div>
+                    <div class="key" id="f8" data-showcode>F8</div>
+                    <div class="key" id="f9" data-showcode>F9</div>
+                    <div class="key" id="f10" data-showcode>F10</div>
+                    <div class="key" id="f11" data-showcode>F11</div>
+                    <div class="key" id="f12" data-showcode>F12</div>
+                    <div class="key" id="numlock" data-showcode>NUM</div>
+                    <div class="key" id="scrolllock" data-showcode>SLK</div>
+                    <div class="key" id="semicolon" data-showcode>; :</div>
+                    <div class="key" id="equal" data-showcode>= +</div>
+                    <div class="key" id="comma" data-showcode>, <</div>
+                    <div class="key" id="minus" data-showcode>- _</div>
+                    <div class="key" id="period" data-showcode>. ></div>
+                    <div class="key" id="slash" data-showcode>/ ?</div>
+                    <div class="key" id="backquote" data-showcode>` ~</div>
+                    <div class="key" id="bracketleft" data-showcode>[ {</div>
+                    <div class="key" id="backslash" data-showcode>\ |</div>
+                    <div class="key" id="bracketright" data-showcode>] }</div>
+                    <div class="key" id="quote" data-showcode>' "</div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
-    <div class="area">
-        <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
-    </div>
+    <div class="wideboi"></div>
 </body>
 </html>
