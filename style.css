@@ -16,7 +16,7 @@ body {
   overflow: hidden;
 }
 
-.longboi {
+.decorative-element--top {
   flex: 2.5%;
   background: #00173e;
   height: 24px;
@@ -24,7 +24,7 @@ body {
   border-bottom: 1px solid #476697;
 }
 
-.wideboi {
+.decorative-element--bottom {
   flex: 2.5%;
   background: #00173e;
   height: 24px;
@@ -49,7 +49,6 @@ body {
   display: flex;
   padding: 80px 0 70px; 
   justify-content: center;
-  align-items: space-around;
   font-family: 'Lato', sans-serif;
   font-size: 48px;
   font-weight: 900;
@@ -78,6 +77,8 @@ body {
   border-radius: 5px;
   border: 2px outset gray;
   user-select: none;
+  text-align: center;
+  padding-top: 2px;
 }
 
 .key:hover {
@@ -86,7 +87,6 @@ body {
 }
 
 .key:active {
-  /* background-color: rgb(0, 200, 255); */
   border: 2px inset gray;
 }
 
@@ -96,7 +96,6 @@ body {
 }
 
 .keyboard-inner-flex-container {
-  /* This is the base. */
   align-self: center;
   margin: 0 auto;
   display: flex;
@@ -107,7 +106,6 @@ body {
 
 .keyboard-keys {
   position: relative;
-  /* These are the keys. */
   align-self: center;
   margin: 0 auto;
   display: grid;
