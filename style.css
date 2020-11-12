@@ -90,6 +90,14 @@ body {
   border: 2px inset gray;
 }
 
+.key__text--double-char {
+  letter-spacing: 0.2em;
+}
+
+#backquote .key__text {
+  letter-spacing: 0.3em;
+}
+
 .keyboard-outer-flex-container {
   display: flex;
   height: 100%;
