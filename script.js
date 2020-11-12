@@ -17,10 +17,10 @@ document.addEventListener("click", (event) => {
     let location = document.getElementById("output__location");
 
     // If user clicks on virtual keyboard key, then display the relevant KeyboardEvent properties.
-		if (event.target.dataset.showcode != undefined) {
+		if (element.dataset.showcode != undefined) {
 
         // Element id's are named after the KeyboardEvent.code property.
-        let elementID = event.target.id;
+        let elementID = element.id;
 
         // Display KeyboardEvent properties.
         code.innerHTML = keycodes[elementID]['code'];
